@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - configmap-teemii.yaml
-  - gitrepository-teemii.yaml
+  - helmrepository-teemii.yaml
   - helmchart-teemii.yaml
 
 namespace: teemii-flux
