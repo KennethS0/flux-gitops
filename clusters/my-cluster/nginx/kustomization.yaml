@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Set the resources in order
+resources:
+  - namespace.yaml
+  - pod-nginx.yaml
+
+# Force all resources to use this namespace.
+namespace: cloudstation
+
+# Identification labels
+commonLabels:
+  managed-by: flux
+  project: cloudstation
