@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: teemii-helm-chart
-        namespace: flux-system
+        namespace: teemii-flux
   valuesFrom:
     - kind: ConfigMap
       name: teemii-values
