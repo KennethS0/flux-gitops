@@ -13,5 +13,7 @@ spec:
         kind: HelmRepository
         name: teemii-helm-chart
         namespace: flux-system
-      valuesFiles:
-        - values/teemi-values.yaml
+  valuesFrom:
+    - kind: ConfigMap
+      name: teemii-values
+      valuesKey: values.yaml
