@@ -18,4 +18,4 @@ spec:
     - kind: GitRepository
       name: teemii-helm-chart
       valuesFiles:
-        - values/teemii-values.yaml
+        - values/values.yaml
