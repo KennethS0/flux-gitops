@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - gitrepository-teemi.yaml
-  - helmrelease-teemi.yaml
+  - gitrepository-teemii.yaml
+  - helmchart-teemii.yaml
 
 namespace: teemii-flux
 
