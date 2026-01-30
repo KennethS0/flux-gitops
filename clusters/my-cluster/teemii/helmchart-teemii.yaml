@@ -8,7 +8,7 @@ spec:
 
   chart:
     spec:
-      chart: ./charts/teemii
+      chart: teemii
       sourceRef:
         kind: HelmRepository
         name: teemii-helm-chart
