@@ -1,0 +1,8 @@
+backend:
+  replicas: 1
+
+pvc:
+  size: 1Gi
+
+frontend:
+  replicas: 1
