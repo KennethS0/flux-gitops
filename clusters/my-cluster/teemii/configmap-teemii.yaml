@@ -17,7 +17,7 @@ data:
       size: 1Gi
 
     frontend:
-      replicas: 2
+      replicas: 1
       image: dokkaner/teemii-frontend:latest
       port: 80
       nodePort: 30080
