@@ -13,9 +13,5 @@ spec:
         kind: GitRepository
         name: teemii-helm-chart
         namespace: flux-system
-
-  valuesFrom:
-    - kind: GitRepository
-      name: teemii-helm-chart
       valuesFiles:
-        - values/values.yaml
+        - values/teemi-values.yaml
