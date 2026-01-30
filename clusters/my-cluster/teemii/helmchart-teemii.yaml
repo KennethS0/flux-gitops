@@ -1,21 +1,21 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: teemi
+  name: teemii
 
 spec:
   interval: 5m
 
   chart:
     spec:
-      chart: ./charts/teemi
+      chart: ./charts/teemii
       sourceRef:
         kind: GitRepository
-        name: teemi-helm-chart
+        name: teemii-helm-chart
         namespace: flux-system
 
   valuesFrom:
     - kind: GitRepository
-      name: teemi-helm-chart
+      name: teemii-helm-chart
       valuesFiles:
-        - values/teemi-values.yaml
+        - values/teemii-values.yaml
