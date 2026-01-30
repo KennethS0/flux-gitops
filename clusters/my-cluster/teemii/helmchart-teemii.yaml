@@ -10,7 +10,7 @@ spec:
     spec:
       chart: ./charts/teemii
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: teemii-helm-chart
         namespace: flux-system
       valuesFiles:
