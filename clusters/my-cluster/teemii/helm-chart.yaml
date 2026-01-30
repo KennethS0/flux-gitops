@@ -1,8 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: teemii-helm-chart
-  
-spec:
-  interval: 1m
-  url: https://kenneths0.github.io/Teemii-Chart
